@@ -28,12 +28,12 @@ html {
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
 
-    .navbar-inverse .navbar-brand {
+    .navbar .navbar-brand {
     color: rgb(255,179,0);
     font-size:150%;
     }
 
-    .navbar-inverse .navbar-nav>li>a {
+    .navbar .navbar-nav>li>a {
     color: rgb(255,179,0);
     font-size:120%;
     }
