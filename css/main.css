@@ -21,7 +21,7 @@ html {
 @media(min-width:767px) {
     .navbar {
         background-color: rgb(39, 116, 174);
-        border-color: rgb(255,179,0);
+        border-color: rgb(255,255,255);
         padding: 20px 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -29,12 +29,12 @@ html {
     }
 
     .navbar .navbar-brand {
-    color: rgb(255,179,0);
+    color: rgb(255,255,255);
     font-size:150%;
     }
 
     .navbar .navbar-nav>li>a {
-    color: rgb(255,179,0);
+    color: rgb(255,255,255);
     font-size:120%;
     }
 
