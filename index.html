@@ -140,7 +140,7 @@
         <div class="container">
             <h1>About</h1>
             <div class="bio-info">
-                <p> I'm an incoming Applied Scientist at Amazon. My research lies in the intersection of Robotics, Computer Vision, Machine Learning and Cognitive Science, with a focus on <strong>Human-Machine Interaction</strong> and <strong>Explainable AI</strong>. I received my PhD in Statistics from <a href="https://www.ucla.edu/">University of California, Los Angeles</a> under the supervision of <a href="http://www.stat.ucla.edu/~sczhu/">Prof. Song-Chun Zhu</a>. 
+                <p> I'm an Applied Scientist at Amazon. My research lies in the intersection of Robotics, Computer Vision, Machine Learning and Cognitive Science, with a focus on building <strong> cognitively inspired cooperative agents</strong>. I received my PhD in Statistics from <a href="https://www.ucla.edu/">University of California, Los Angeles</a> under the supervision of <a href="http://www.stat.ucla.edu/~sczhu/">Prof. Song-Chun Zhu</a>. 
 
                 <p> During my PhD, I also worked closely with <a href="https://www.psych.ucla.edu/faculty-page/hongjing/">Prof. Hongjing Lu</a> (UCLA), <a href="https://viterbi.usc.edu/directory/faculty/Sukhatme/Gaurav">Prof. Gaurav Sukhatme</a> (USC & Amazon Alexa AI) and <a href="http://tshu.io">Dr. Tianmin Shu</a> (MIT). Before that, I obtained a bachelor degree of Electronic Engineering at <a href="http://www.fudan.edu.cn/en/"> Fudan University.</a></p>
             </div>
@@ -154,6 +154,7 @@
         <div class="container">
         	<h1>News</h1>
             <div class="news">
+            	<p><strong>12/2022</strong>: ARNOLD is accepted as Spotlight by <a href="https://sites.google.com/view/langrob-corl22/">CORL 2022 Workshop on Language and Robot Learning</a>.
             	<p><strong>07/2022</strong>: Our paper on In-situ bidirectional human-robot value alignment is published on <a href="https://www.science.org/doi/10.1126/scirobotics.abm4183">Science Robotics</a>.
                 <p><strong>07/2022</strong>: Our paper on Dialogue-Enabled Agents for Embodied Instruction Following is accepted by RA-L.
                 <p><strong>06/2022</strong>: I defended my PhD dissertation. 
@@ -222,7 +223,8 @@
   pages={1669--1676},
   year={2017},
   organization={IEEE}
-}										</pre>
+}</pre>
+
                                     </div>	
                                 </li>
 
@@ -259,7 +261,8 @@
   author={Gao, Xiaofeng and Gong, Ran and Shu, Tianmin and Xie, Xu and Wang, Shu and Zhu, Song-Chun},
   journal={arXiv preprint arXiv:1903.05757},
   year={2019}
-}										</pre>
+}</pre>
+
                                     </div>	
                                 </li>
 
@@ -300,7 +303,8 @@
   pages={1119--1126},
   year={2020},
   organization={IEEE}
-}										</pre>
+}</pre>
+
                                     </div>	
                                 </li>
 
@@ -340,7 +344,7 @@
   pages={8293--8305},
   year={2021},
   publisher={IEEE}
-}									</pre>
+}</pre>
                                     </div>	
                                 </li>
 
@@ -381,7 +385,7 @@
   pages={2644--2651},
   year={2022},
   publisher={IEEE}
-}									</pre>
+}</pre>
                                     </div>	
                                 </li>
 
@@ -420,7 +424,8 @@
   pages={563-572},
   year={2022},
   organization={IEEE}
-}											</pre>
+}</pre>
+
                                     </div>	
                                 </li>
 
@@ -461,7 +466,7 @@
   number={4},
   pages={10049-10056},
   doi={10.1109/LRA.2022.3193254}
-}								</pre>
+}</pre>
                                     </div>	
                                 </li>
 
@@ -505,9 +510,52 @@
   number={68},
   year={2022},
   publisher={Science Robotics}
-}										</pre>
+}</pre>
                                     </div>	
                                 </li>
+
+                                <!-- Arnold -->
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-4 col-lg-2">
+                                            <img src="./imgs/corl22_arnold.png" class="img-responsive img-fluid">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-8 col-lg-10">
+                                        <h4 class="list-group-item-heading">ARNOLD: A Benchmark for Language-Grounded Task Learning with Continuous States in Realistic Scenes</h4>
+                                        <p class="detail">
+                                            <a href="https://nikepupu.github.io/">Ran Gong</a>,
+                                            <a href="https://yizhouzhao.github.io/">Yizhou Zhao</a>,
+                                            <strong>Xiaofeng Gao</strong>, 
+                                            <a href="https://huangjy-pku.github.io/">Jiangyong Huang</a>, 
+                                            <a href="https://qywu.github.io/about.html">Qingyang Wu</a>, 
+                                            <a href="https://wensi-ai.github.io/">Wensi Ai</a>, 
+                                            <a href="https://buzz-beater.github.io/">Baoxiong Jia</a>, 
+                                            <a href="https://www.linkedin.com/in/josephziheng/">Zhou Ziheng</a>,
+                                            <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a>,
+                                            <a href="https://siyuanhuang.com/">Siyuan Huang</a><br>
+                                            <em> CORL Workshop on Language and Robot Learning, 2022</em>
+                                        </p>
+                                        <button class="btn btn-success btn-xs" data-toggle="collapse" data-target="#arnold-abs">Abstract</button>
+                                        <a class="btn btn-primary btn-xs" role="button" href="https://openreview.net/forum?id=tt53PdNhwwf">Paper</a>
+                                        <button class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#arnold-cite">Cite</button>
+                                        </div>
+                                    </div>
+                                    <div id="arnold-abs" class="collapse abstract">
+                                        Understanding continuous object states and task goals is essential for task planning since they are generally not discrete in the real world. However, most previous task learning benchmarks assume discrete (e.g., binary) object states, making it barely applicable to transfer the policy from the simulated environment to the real world. Moreover, the trained robot's ability to follow human instructions based on grounding the actions and states is limited. To address such challenges, we present ARNOLD, a benchmark that evaluates language-grounded task learning with continuous states in realistic 3D scenes. ARNOLD consists of 8 language-conditioned manipulation tasks that require an in-depth understanding of continuous object states and policy learning for continuous goals. To encourage language-instructed learning, we provide template-generated demonstrations with language descriptions. We will benchmarked the task performances with state-of-the-art language-conditioned policy learning algorithms. We will release ARNOLD and host challenges to promote future research in embodied AI and robotics.
+                                    </div>
+
+                                    <div id="arnold-cite" class="collapse abstract">
+                                    	<pre class="citation" align="left">
+@inproceedings{gong2022arnold,
+  title={ARNOLD: A Benchmark for Language-Grounded Task Learning with Continuous States in Realistic Scenes},
+  author={Gong, Ran and Zhao, Yizhou and Gao, Xiaofeng and Huang, Jiangyong and Wu, Qingyang and Ai, Wensi and Jia, Baoxiong and Ziheng, Zhou and Zhu, Song-Chun and Huang, Siyuan},
+  booktitle={Workshop on Language and Robotics at CoRL 2022}
+}</pre>
+                                    </div>	
+                                </li>
+
+
+
                             </ul>
                         </div>
                 </div>
@@ -518,7 +566,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p class="text-muted">© 2022 All rights reserved. Developed by Xiaofeng Gao.</p>
+            <p class="text-muted">© 2023 All rights reserved. Developed by Xiaofeng Gao.</p>
         </div>
     </footer>
 
