@@ -517,38 +517,42 @@
                                 <li class="list-group-item">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-4 col-lg-2">
-                                            <img src="./imgs/corl22_arnold.png" class="img-responsive img-fluid">
+                                            <img src="./imgs/arnold.gif" class="img-responsive img-fluid">
                                         </div>
                                         <div class="col-xs-12 col-sm-8 col-lg-10">
                                         <h4 class="list-group-item-heading">ARNOLD: A Benchmark for Language-Grounded Task Learning with Continuous States in Realistic Scenes</h4>
                                         <p class="detail">
-                                            <a href="https://nikepupu.github.io/">Ran Gong</a>,
-                                            <a href="https://yizhouzhao.github.io/">Yizhou Zhao</a>,
+                                            <a href="https://nikepupu.github.io/">Ran Gong*</a>,
+                                            <a href="https://huangjy-pku.github.io/">Jiangyong Huang*</a>,
+                                            <a href="https://www.zyz.lol/app/aboutme/aboutme.html">Yizhou Zhao</a>,
+                                            <a href="https://geng-haoran.github.io/">Haoran Geng</a>,
                                             <strong>Xiaofeng Gao</strong>, 
-                                            <a href="https://huangjy-pku.github.io/">Jiangyong Huang</a>, 
-                                            <a href="https://qywu.github.io/about.html">Qingyang Wu</a>, 
-                                            <a href="https://wensi-ai.github.io/">Wensi Ai</a>, 
-                                            <a href="https://buzz-beater.github.io/">Baoxiong Jia</a>, 
-                                            <a href="https://www.linkedin.com/in/josephziheng/">Zhou Ziheng</a>,
+                                            <a href="https://qywu.github.io/">Qingyang Wu</a>,
+                                            <a href="https://wensi-ai.github.io/">Wensi Ai</a>,
+                                            <a href="https://www.linkedin.com/in/josephziheng/">Ziheng Zhou</a>,
+                                            <a href="http://web.cs.ucla.edu/~dt/">Demetri Terzopoulos</a>,
                                             <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a>,
-                                            <a href="https://siyuanhuang.com/">Siyuan Huang</a><br>
-                                            <em> CORL Workshop on Language and Robot Learning, 2022</em>
+                                            <a href="https://buzz-beater.github.io/">Baoxiong Jia</a>,
+                                            <a href="https://siyuanhuang.com/">Siyuan Huang</a>,
+                                            <em> International Conference on Computer Vision (ICCV), 2023</em>
                                         </p>
                                         <button class="btn btn-success btn-xs" data-toggle="collapse" data-target="#arnold-abs">Abstract</button>
-                                        <a class="btn btn-primary btn-xs" role="button" href="https://openreview.net/forum?id=tt53PdNhwwf">Paper</a>
+                                        <a class="btn btn-primary btn-xs" role="button" href="https://arxiv.org/abs/2304.04321">Paper</a>
                                         <button class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#arnold-cite">Cite</button>
+                                        <a class="btn btn-warning btn-xs" role="button" href="https://arnold-benchmark.github.io/">Website</a>
                                         </div>
                                     </div>
                                     <div id="arnold-abs" class="collapse abstract">
-                                        Understanding continuous object states and task goals is essential for task planning since they are generally not discrete in the real world. However, most previous task learning benchmarks assume discrete (e.g., binary) object states, making it barely applicable to transfer the policy from the simulated environment to the real world. Moreover, the trained robot's ability to follow human instructions based on grounding the actions and states is limited. To address such challenges, we present ARNOLD, a benchmark that evaluates language-grounded task learning with continuous states in realistic 3D scenes. ARNOLD consists of 8 language-conditioned manipulation tasks that require an in-depth understanding of continuous object states and policy learning for continuous goals. To encourage language-instructed learning, we provide template-generated demonstrations with language descriptions. We will benchmarked the task performances with state-of-the-art language-conditioned policy learning algorithms. We will release ARNOLD and host challenges to promote future research in embodied AI and robotics.
+                                        Understanding the continuous states of objects is essential for task learning and planning in the real world. However, most existing task learning benchmarks assume discrete(e.g., binary) object goal states, which poses challenges for the learning of complex tasks and transferring learned policy from simulated environments to the real world. Furthermore, state discretization limits a robot's ability to follow human instructions based on the grounding of actions and states. To tackle these challenges, we present ARNOLD, a benchmark that evaluates language-grounded task learning with continuous states in realistic 3D scenes. ARNOLD is comprised of 8 language-conditioned tasks that involve understanding object states and learning policies for continuous goals. To promote language-instructed learning, we provide expert demonstrations with template-generated language descriptions. We assess task performance by utilizing the latest language-conditioned policy learning models. Our results indicate that current models for language-conditioned manipulations continue to experience significant challenges in novel goal-state generalizations, scene generalizations, and object generalizations. These findings highlight the need to develop new algorithms that address this gap and underscore the potential for further research in this area.
                                     </div>
 
                                     <div id="arnold-cite" class="collapse abstract">
                                     	<pre class="citation" align="left">
-@inproceedings{gong2022arnold,
-  title={ARNOLD: A Benchmark for Language-Grounded Task Learning with Continuous States in Realistic Scenes},
-  author={Gong, Ran and Zhao, Yizhou and Gao, Xiaofeng and Huang, Jiangyong and Wu, Qingyang and Ai, Wensi and Jia, Baoxiong and Ziheng, Zhou and Zhu, Song-Chun and Huang, Siyuan},
-  booktitle={Workshop on Language and Robotics at CoRL 2022}
+@article{gong2023arnold,
+  title={ARNOLD: A Benchmark for Language-Grounded Task Learning With Continuous States in Realistic 3D Scenes},
+  author={Gong, Ran and Huang, Jiangyong and Zhao, Yizhou and Geng, Haoran and Gao, Xiaofeng and Wu, Qingyang and Ai, Wensi and Zhou, Ziheng and Terzopoulos, Demetri and Zhu, Song-Chun and others},
+  journal={arXiv preprint arXiv:2304.04321},
+  year={2023}
 }</pre>
                                     </div>	
                                 </li>
@@ -587,11 +591,6 @@
 }</pre>
                                     </div>  
                                 </li>
-
-
-                                
-
-
 
                             </ul>
                         </div>
