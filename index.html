@@ -139,7 +139,7 @@
             <div class="bio-info">
                 <p> I'm an Applied Scientist at Amazon. My research lies in the intersection of Robotics, Computer Vision, Machine Learning and Cognitive Science, with a focus on developing <strong> cognitively inspired cooperative agents</strong>. I received my PhD in Statistics from <a href="https://www.ucla.edu/">University of California, Los Angeles</a> under the supervision of <a href="http://www.stat.ucla.edu/~sczhu/">Prof. Song-Chun Zhu</a>. 
 
-                <p> During my PhD, I also worked closely with <a href="https://www.psych.ucla.edu/faculty-page/hongjing/">Prof. Hongjing Lu</a> (UCLA), <a href="https://viterbi.usc.edu/directory/faculty/Sukhatme/Gaurav">Prof. Gaurav Sukhatme</a> (USC & Amazon Alexa AI) and <a href="http://tshu.io">Dr. Tianmin Shu</a> (MIT). Before that, I obtained a bachelor degree of Electronic Engineering at <a href="http://www.fudan.edu.cn/en/"> Fudan University.</a></p>
+                <p> During my PhD, I also worked closely with <a href="https://www.psych.ucla.edu/faculty-page/hongjing/">Prof. Hongjing Lu</a> (UCLA), <a href="https://viterbi.usc.edu/directory/faculty/Sukhatme/Gaurav">Prof. Gaurav Sukhatme</a> (USC & Amazon) and <a href="http://tshu.io">Prof. Tianmin Shu</a> (JHU). Before that, I obtained a bachelor degree of Electronic Engineering at <a href="http://www.fudan.edu.cn/en/"> Fudan University.</a></p>
             </div>
 
         </div>
@@ -151,12 +151,13 @@
         <div class="container">
         	<h1>News</h1>
             <div class="news">
+                <p><strong>02/2024</strong>: Groundhog is accepted by CVPR. 
                 <p><strong>09/2023</strong>: Alexa Arena is accepted by NeurIPS 2023 Datasets and Benchmarks track.
                 <p><strong>08/2023</strong>: LEMMA is accepted by RA-L.
                 <p><strong>07/2023</strong>: ARNOLD is accepted by ICCV 2023.
-                <p><strong>06/2023</strong>: We organized the <a href="https://eval.ai/web/challenges/challenge-page/1859/overview">DialFRED</a> challenge in the <a href="https://embodied-ai.org/">CVPR 2023 Embodied AI workshop</a>.
-                <p><strong>03/2023</strong>: We released Alexa Arena, a user-centric Embodied AI platform.
-            	<p><strong>12/2022</strong>: ARNOLD is accepted as Spotlight by <a href="https://sites.google.com/view/langrob-corl22/">CORL 2022 Workshop on Language and Robot Learning</a>.
+                <!-- <p><strong>06/2023</strong>: We organized the <a href="https://eval.ai/web/challenges/challenge-page/1859/overview">DialFRED</a> challenge in the <a href="https://embodied-ai.org/">CVPR 2023 Embodied AI workshop</a>. -->
+                <!-- <p><strong>03/2023</strong>: We released Alexa Arena, a user-centric Embodied AI platform. -->
+            	<!-- <p><strong>12/2022</strong>: ARNOLD is accepted as Spotlight by <a href="https://sites.google.com/view/langrob-corl22/">CORL 2022 Workshop on Language and Robot Learning</a>. -->
             	<!-- <p><strong>07/2022</strong>: Our paper on In-situ bidirectional human-robot value alignment is published on <a href="https://www.science.org/doi/10.1126/scirobotics.abm4183">Science Robotics</a>. -->
                 <!-- <p><strong>07/2022</strong>: Our paper on Dialogue-Enabled Agents for Embodied Instruction Following is accepted by RA-L. -->
                 <!-- <p><strong>06/2022</strong>: I defended my PhD dissertation.  -->
@@ -191,6 +192,44 @@
                         <div class="contents">
                             <ul class="list-group">
                             	(* indicates equal contribution)
+
+                                <!-- Groundhog -->
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-4 col-lg-2">
+                                            <img src="./imgs/groundhog.png" class="img-responsive img-fluid">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-8 col-lg-10">
+                                        <h4 class="list-group-item-heading">GROUNDHOG: Grounding Large Language Models to Holistic Segmentation</h4>
+                                        <p class="detail">
+                                            Yichi Zhang, 
+                                            Ziqiao Ma, 
+                                            <strong>Xiaofeng Gao</strong>,
+                                            Suhaila Shakiah, 
+                                            Qiaozi Gao, 
+                                            Joyce Chai <br>
+                                            <em> IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2024</em>
+                                        </p>
+                                        <button class="btn btn-success btn-xs" data-toggle="collapse" data-target="#groundhog-abs">Abstract</button>
+                                        <a class="btn btn-primary btn-xs" role="button" href="https://xfgao.github.io/paper/groundhog.pdf">PDF</a>
+                                        <button class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#groundhog-cite">Cite</button>
+                                        <a class="btn btn-warning btn-xs" role="button" href="https://groundhog-mllm.github.io/">Website</a>
+                                        </div>
+                                    </div>
+                                    <div id="groundhog-abs" class="collapse abstract">
+                                        Most multimodal large language models (MLLMs) learn language-to-object grounding through causal language modeling where grounded objects are captured by bounding boxes as sequences of location tokens. This paradigm lacks pixel-level representations that are important for fine-grained visual understanding and diagnosis. In this work, we introduce GROUNDHOG, an MLLM developed by grounding Large Language Models to holistic segmentation. GROUNDHOG incorporates a masked feature extractor and converts extracted features into visual entity tokens for the MLLM backbone, which then connects groundable phrases to unified grounding masks by retrieving and merging the entity masks. To train GROUNDHOG, we carefully curated M3G2, a grounded visual instruction tuning dataset with Multi-Modal Multi-Grained Grounding, by harvesting a collection of segmentation-grounded datasets with rich annotations. Our experimental results show that GROUNDHOG achieves superior performance on various language grounding tasks without task-specific fine-tuning, and significantly reduces object hallucination. GROUNDHOG also demonstrates better grounding towards complex forms of visual input and provides easy-to-understand diagnosis in failure cases.
+                                    </div>
+
+                                    <div id="groundhog-cite" class="collapse abstract">
+                                        <pre class="citation" align="left">
+@article{zhang2024groundhog,
+  title={GROUNDHOG: Grounding Large Language Models to Holistic Segmentation},
+  author={Zhang, Yichi and Ma, Ziqiao and Gao, Xiaofeng and Shakiah, Suhaila and Gao, Qiaozi and Chai, Joyce},
+  journal={arXiv preprint arXiv:2402.16846},
+  year={2024}
+}</pre>
+                                    </div>  
+                                </li>
 
                                 <!-- LEMMA -->
                                 <li class="list-group-item">
