@@ -193,6 +193,45 @@
                         <div class="contents">
                             <ul class="list-group">
                             	(* indicates equal contribution)
+                                <!-- MIDAS -->
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-4 col-lg-2">
+                                            <img src="./imgs/midas.png" class="img-responsive img-fluid">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-8 col-lg-10">
+                                        <h4 class="list-group-item-heading">Mastering Robot Manipulation with Multimodal Prompts through Pretraining and Multi-task Fine-tuning</h4>
+                                        <p class="detail">
+                                            Jiachen Li, Qiaozi Gao, Michael Johnston, <strong>Xiaofeng Gao</strong>, Xuehai He, Hangjie Shi, Suhaila Shakiah, Reza Ghanadan, William Yang Wang <br>
+                                            <em> International Conference on Machine Learning (ICML), 2024</em>
+                                        </p>
+                                        <button class="btn btn-success btn-xs" data-toggle="collapse" data-target="#midas-abs">Abstract</button>
+                                        <a class="btn btn-primary btn-xs" role="button" href="https://xfgao.github.io/paper/ICML2024_MIDAS.pdf">PDF</a>
+                                        <button class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#midas-cite">Cite</button>
+                                        </div>
+                                    </div>
+                                    <div id="midas-abs" class="collapse abstract">
+                                        Prompt-based learning has been demonstrated as a compelling paradigm contributing to large language models’ tremendous success (LLMs). Inspired by their success in language tasks, existing research has leveraged LLMs in embodied instruction following and task planning. In this work, we tackle the problem of training a robot to understand multimodal prompts, interleaving vision signals with text descriptions. This type of task poses a major challenge to robots’ capability to understand the interconnection and complementarity between vision and language signals. In this work, we introduce an effective framework that learns a policy to perform robot manipulation with multimodal prompts from multi-task expert trajectories. Our methods consist of a two-stage training pipeline that performs inverse dynamics pretraining and multi-task finetuning. To facilitate multimodal understanding, we design our multimodal prompt encoder by augmenting a pretrained LM with a residual connection to the visual input and model the dependencies among action dimensions. Empirically, we evaluate the efficacy of our method on the VIMA-BENCH and establish a new state-of-the-art (10% improvement in success rate). Moreover, we demonstrate that our model exhibits remarkable in-context learning ability.
+                                    </div>
+
+                                    <div id="midas-cite" class="collapse abstract">
+                                        <pre class="citation" align="left">
+@InProceedings{li2024mastering,
+  title =    {Mastering Robot Manipulation with Multimodal Prompts through Pretraining and Multi-task Fine-tuning},
+  author =       {Li, Jiachen and Gao, Qiaozi and Johnston, Michael and Gao, Xiaofeng and He, Xuehai and Shi, Hangjie and Shakiah, Suhaila and Ghanadan, Reza and Wang, William Yang},
+  booktitle =    {Proceedings of the 41st International Conference on Machine Learning},
+  pages =    {27822--27845},
+  year =     {2024},
+  editor =   {Salakhutdinov, Ruslan and Kolter, Zico and Heller, Katherine and Weller, Adrian and Oliver, Nuria and Scarlett, Jonathan and Berkenkamp, Felix},
+  volume =   {235},
+  series =   {Proceedings of Machine Learning Research},
+  month =    {21--27 Jul},
+  publisher =    {PMLR},
+  pdf =      {https://raw.githubusercontent.com/mlresearch/v235/main/assets/li24x/li24x.pdf},
+  url =      {https://proceedings.mlr.press/v235/li24x.html},
+}</pre>
+                                    </div>  
+                                </li>
 
                                 <!-- Groundhog -->
                                 <li class="list-group-item">
